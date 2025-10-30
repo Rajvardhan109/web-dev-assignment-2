@@ -1,0 +1,161 @@
+/* === Global Styles === */
+:root {
+  --primary-color: #4f46e5;
+  --accent-color: #facc15;
+  --bg-color: #0f0f0f;
+  --card-bg: #1a1a1a;
+  --text-color: #f3f4f6;
+  --muted: #9ca3af;
+  --radius: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* === Navigation === */
+nav {
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+/* === Sections === */
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+/* === About === */
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+/* === Skills Table === */
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 70%;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+th, td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #333;
+}
+
+th {
+  background: var(--primary-color);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #1e1e1e;
+}
+
+/* === Project Cards === */
+.project-card {
+  background: var(--card-bg);
+  margin: 1rem auto;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  width: 70%;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+.project-card h3 {
+  color: var(--accent-color);
+}
+
+/* === Buttons === */
+.btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+  background: #6366f1;
+  transform: scale(1.05);
+}
+
+/* === Contact Form === */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+}
+
+input, textarea {
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  border-radius: var(--radius);
+  border: none;
+  background: #222;
+  color: white;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid var(--accent-color);
+}
+
+/* === Footer === */
+footer {
+  background: #111;
+  color: var(--muted);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
